@@ -38,6 +38,11 @@ export default function Home() {
         <Hero />
         <MarqueeSection />
         <Projects />
+        <section className="container relative flex flex-col items-center justify-center pt-16 lg:pt-24">
+            <h2 className="lg:text-7xl text-4xl text-center font-semibold font-headline text-white">
+                CRIATIVOS ESCALADOS
+            </h2>
+        </section>
         <Workflow />
         <Faq />
         <Cta />
