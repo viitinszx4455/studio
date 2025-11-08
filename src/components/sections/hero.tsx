@@ -19,7 +19,7 @@ export default function Hero() {
         <div className="flex flex-col lg:items-start items-center">
           <h1 className="text-6xl lg:text-9xl font-bold text-white font-headline">Design</h1>
           <div className="flex flex-col lg:ml-[10rem] lg:items-start items-center">
-            <h1 className="text-6xl lg:text-9xl font-headline italic bg-gradient-to-r from-[#9160E6] via-primary to-[#290E58] bg-clip-text text-transparent">Sites</h1>
+            <h1 className="text-6xl lg:text-9xl font-headline italic" style={{ background: 'linear-gradient(90deg, #000000 0%, #555555 50%, #FFFFFF 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textShadow: '2px 2px 8px rgba(0, 0, 0, 0.25)' }}>Sites</h1>
             <h1 className="text-6xl lg:text-9xl font-bold text-white font-headline">Conversão</h1>
           </div>
         </div>
@@ -31,10 +31,10 @@ export default function Hero() {
             Sites modernos, rápidos e feitos sob medida para destacar sua marca e atrair resultados reais.
           </p>
           <div className="flex gap-3 justify-center lg:justify-start items-center">
-            <Button asChild size="lg" className="bg-gradient-to-r from-primary to-[#290E58] bg-[length:200%_100%] bg-right hover:bg-left transition-all duration-500 text-white font-semibold rounded-full px-8 py-6 text-base animate-ultraSlowBlueGradient shadow-lg hover:shadow-primary/50">
+            <Button asChild size="lg" className="bg-gradient-to-r from-purple-main to-purple-dark bg-[length:200%_100%] bg-right hover:bg-left transition-all duration-500 text-white font-semibold rounded-full px-8 py-6 text-base shadow-lg hover:shadow-purple-main/50">
               <a href="https://wa.me/5562991210362?text=Olá, gostaria de saber mais sobre o seu serviço de criação de sites." target="_blank" rel="noopener noreferrer">Quero meu site personalizado</a>
             </Button>
-            <Button asChild size="icon" className="h-14 w-14 lg:h-12 lg:w-12 rounded-full bg-gradient-to-r from-primary to-[#290E58] bg-[length:200%_100%] bg-right hover:bg-left transition-all duration-500 text-white font-semibold relative cursor-pointer shadow-lg hover:shadow-primary/50">
+            <Button asChild size="icon" className="h-14 w-14 lg:h-12 lg:w-12 rounded-full bg-gradient-to-r from-purple-main to-purple-dark bg-[length:200%_100%] bg-right hover:bg-left transition-all duration-500 text-white font-semibold relative cursor-pointer shadow-lg hover:shadow-purple-main/50">
               <a href="https://wa.me/5562991210362?text=Olá, gostaria de saber mais sobre o seu serviço de criação de sites." target="_blank" rel="noopener noreferrer">
                 <ArrowUpRight />
               </a>
@@ -51,8 +51,8 @@ export default function Hero() {
             ))}
           </div>
           <p className="flex items-center gap-2 text-muted-foreground text-lg">
-            <CircleCheckBig className="w-5 h-5 text-primary" />
-            +50 clientes aprovam a <span className="text-primary font-semibold">Nexora</span>
+            <CircleCheckBig className="w-5 h-5 text-purple-main" />
+            +50 clientes aprovam a <span className="text-purple-main font-semibold">Nexora</span>
           </p>
         </div>
       </div>

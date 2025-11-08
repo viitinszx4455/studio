@@ -26,25 +26,25 @@ export default function Header() {
           {logo && <Image src={logo.imageUrl} alt="Logo da agência" width={36} height={36} className="w-9 h-9" data-ai-hint={logo.imageHint} />}
           <span className="lg:text-xl text-[1.4rem] font-medium text-gray-400" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>SCALE</span>
         </Link>
-        <nav className="hidden lg:flex bg-secondary/30 backdrop-blur-sm py-[0.4rem] rounded-full items-center justify-between gap-10 transition-all duration-300">
+        <nav className="hidden lg:flex bg-gray-deep/30 backdrop-blur-sm py-[0.4rem] rounded-full items-center justify-between gap-10 transition-all duration-300">
           <ul className="flex items-center gap-6 px-[2rem]">
             <li><Link href="#home" className="text-[0.9rem] font-medium text-foreground hover:text-muted-foreground transition-colors">Home</Link></li>
             <li><Link href="#projetos" className="text-[0.9rem] font-medium text-foreground hover:text-muted-foreground transition-colors">Projetos</Link></li>
             <li><Link href="#quem-somos" className="text-[0.9rem] font-medium text-foreground hover:text-muted-foreground transition-colors">Quem somos</Link></li>
             <li><Link href="#contatos" className="text-[0.9rem] font-medium text-foreground hover:text-muted-foreground transition-colors">Contatos</Link></li>
           </ul>
-          <Button asChild className="bg-gradient-to-r from-primary to-[#290E58] bg-[length:200%_100%] bg-right hover:bg-left transition-all duration-500 text-white font-semibold rounded-full px-6 mx-[0.5rem] text-[0.8rem] h-9 shadow-md hover:shadow-lg hover:brightness-110 animate-ultraSlowBlueGradient">
+          <Button asChild className="bg-gradient-to-r from-purple-main to-purple-dark bg-[length:200%_100%] bg-right hover:bg-left transition-all duration-500 text-white font-semibold rounded-full px-6 mx-[0.5rem] text-[0.8rem] h-9 shadow-md hover:shadow-lg hover:brightness-110">
             <a href="https://wa.me/5562991210362?text=Olá, gostaria de saber mais sobre o seu serviço de criação de sites." target="_blank" rel="noopener noreferrer">Quero meu site</a>
           </Button>
         </nav>
         <div className="flex items-center gap-2">
-          <a href="https://www.instagram.com/nexora.ag/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/80 hover:bg-primary/90 rounded-full flex items-center justify-center cursor-pointer">
+          <a href="https://www.instagram.com/nexora.ag/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-purple-main/80 hover:bg-purple-main/90 rounded-full flex items-center justify-center cursor-pointer">
             <Instagram className="w-5 h-5 text-white" />
           </a>
-          <a href="https://www.facebook.com/profile.php?id=61581107199846" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/80 hover:bg-primary/90 rounded-full flex items-center justify-center cursor-pointer">
+          <a href="https://www.facebook.com/profile.php?id=61581107199846" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-purple-main/80 hover:bg-purple-main/90 rounded-full flex items-center justify-center cursor-pointer">
             <Facebook className="w-5 h-5 text-white" />
           </a>
-          <a href="https://wa.me/5562991210362?text=Olá, gostaria de saber mais sobre o seu serviço de criação de sites." target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/80 hover:bg-primary/90 rounded-full flex items-center justify-center cursor-pointer">
+          <a href="https://wa.me/5562991210362?text=Olá, gostaria de saber mais sobre o seu serviço de criação de sites." target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-purple-main/80 hover:bg-purple-main/90 rounded-full flex items-center justify-center cursor-pointer">
             <MessageCircle className="w-5 h-5 text-white" />
           </a>
         </div>

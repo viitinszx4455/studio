@@ -21,6 +21,14 @@ export default {
         headline: ['DM Serif Display', 'serif'],
       },
       colors: {
+        'black-true': 'hsl(var(--black-true))',
+        'gray-deep': 'hsl(var(--gray-deep))',
+        'gray-medium': 'hsl(var(--gray-medium))',
+        'white-pure': 'hsl(var(--white-pure))',
+        'purple-dark': 'hsl(var(--purple-dark))',
+        'purple-main': 'hsl(var(--purple-main))',
+        'purple-light': 'hsl(var(--purple-light))',
+
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

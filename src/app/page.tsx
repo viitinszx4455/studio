@@ -16,30 +16,14 @@ export default function Home() {
     <div className="relative overflow-x-hidden bg-background">
       <div
         aria-hidden="true"
-        className="fixed top-[-500px] left-1/2 z-0 -translate-x-1/2"
+        className="fixed top-0 left-0 w-full h-full z-0"
         style={{
-          width: '900px',
-          height: '900px',
-          backgroundColor: 'rgb(83, 28, 179)',
-          opacity: 0.7,
+          background: 'radial-gradient(circle at center, hsl(var(--purple-main)) 0%, hsl(var(--purple-dark)) 60%, hsl(var(--black-true)) 100%)',
+          opacity: 0.3,
           filter: 'blur(160px)',
-          borderRadius: '50%',
-          pointerEvents: 'none',
         }}
       ></div>
-      <div
-        aria-hidden="true"
-        className="fixed bottom-[-500px] left-1/2 z-0 -translate-x-1/2"
-        style={{
-          width: '900px',
-          height: '900px',
-          backgroundColor: 'rgb(83, 28, 179)',
-          opacity: 0.4,
-          filter: 'blur(160px)',
-          borderRadius: '50%',
-          pointerEvents: 'none',
-        }}
-      ></div>
+     
       {bgHero && (
         <Image
           src={bgHero.imageUrl}

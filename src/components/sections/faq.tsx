@@ -44,11 +44,11 @@ export default function Faq() {
             <h2 className="lg:text-7xl text-4xl font-semibold font-headline text-white mb-12 text-center">Perguntas frequentes</h2>
             <Accordion type="single" collapsible className="w-full max-w-4xl space-y-4">
                 {faqs.map((faq, index) => (
-                    <AccordionItem value={`item-${index}`} key={index} className="bg-card/50 rounded-xl border-white/5">
-                        <AccordionTrigger className="w-full flex justify-between items-center text-left p-6 text-white font-medium hover:bg-white/5 transition-colors text-lg hover:no-underline [&>svg]:text-primary">
+                    <AccordionItem value={`item-${index}`} key={index} className="bg-gray-deep/50 rounded-xl border-gray-medium/50">
+                        <AccordionTrigger className="w-full flex justify-between items-center text-left p-6 text-white font-medium hover:bg-white/5 transition-colors text-lg hover:no-underline [&>svg]:text-purple-main">
                             <span>{faq.question}</span>
                         </AccordionTrigger>
-                        <AccordionContent className="px-6 text-gray-400 text-base leading-relaxed">
+                        <AccordionContent className="px-6 text-gray-medium text-base leading-relaxed">
                             <div className="pt-0 pb-4">
                                 {faq.answer}
                             </div>
@@ -56,10 +56,10 @@ export default function Faq() {
                     </AccordionItem>
                 ))}
             </Accordion>
-            <p className="text-gray-400 text-center mt-16 mb-6 text-lg">
+            <p className="text-gray-medium text-center mt-16 mb-6 text-lg">
                 Ainda está com dúvidas? <br className="hidden lg:block" /> Fale com nosso suporte no WhatsApp e tenha uma resposta agora mesmo.
             </p>
-            <Button asChild size="lg" className="bg-gradient-to-r from-primary to-[#290E58] bg-[length:200%_100%] bg-right hover:bg-left transition-all duration-500 text-white font-semibold rounded-full px-8 py-6 text-base animate-ultraSlowBlueGradient shadow-lg hover:shadow-primary/50">
+            <Button asChild size="lg" className="bg-gradient-to-r from-purple-main to-purple-dark bg-[length:200%_100%] bg-right hover:bg-left transition-all duration-500 text-white font-semibold rounded-full px-8 py-6 text-base shadow-lg hover:shadow-purple-main/50">
                 <a href="https://wa.me/5562991210362?text=Olá, tenho algumas dúvidas sobre o site!" target="_blank" rel="noopener noreferrer">
                     Falar com o suporte
                 </a>

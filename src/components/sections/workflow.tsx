@@ -30,7 +30,7 @@ export default function Workflow() {
     return (
         <section id="contatos" className="container relative flex flex-col items-center justify-center py-16 lg:py-24 mb-16 lg:mb-24 overflow-hidden">
             <h2 className="lg:text-7xl text-4xl text-center font-semibold font-headline text-white pb-8 lg:pb-16">
-                Fluxo de trabalho da <span className="text-primary">Nexora</span>
+                Fluxo de trabalho da <span className="text-purple-main">Nexora</span>
             </h2>
             <div className="flex gap-3 justify-center items-center mb-4">
                 <p className="text-base text-muted-foreground font-semibold">Arraste para o lado</p>
@@ -47,12 +47,12 @@ export default function Workflow() {
                     {workflowSteps.map((step) => (
                         <CarouselItem key={step.step}>
                             <div className="p-1">
-                                <Card className="bg-card/80 rounded-2xl border-b-4 border-primary animate-borderGlow text-left h-full">
+                                <Card className="bg-gray-deep/80 rounded-2xl border-b-4 border-purple-main text-left h-full">
                                     <CardContent className="flex flex-col lg:flex-row justify-center items-start lg:items-center p-8 lg:p-12 gap-8 lg:gap-16">
                                         <div className="text-7xl lg:text-[10rem] font-regular text-white/80 font-headline">{step.step}</div>
                                         <div>
                                             <h3 className="text-2xl font-semibold text-white mb-5">{step.title}</h3>
-                                            <p className="text-gray-400 text-base lg:text-lg leading-relaxed">{step.description}</p>
+                                            <p className="text-gray-medium text-base lg:text-lg leading-relaxed">{step.description}</p>
                                         </div>
                                     </CardContent>
                                 </Card>

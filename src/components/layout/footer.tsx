@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="w-full border-t border-white/10 py-7 px-8 flex flex-col items-center justify-center gap-5 text-sm text-gray-400">
+        <footer className="w-full border-t border-gray-medium/10 py-7 px-8 flex flex-col items-center justify-center gap-5 text-sm text-gray-medium">
             <p>© 2025 Nexora. Todos os direitos reservados.</p>
             <div className="flex gap-6">
                 <a href="https://www.instagram.com/nexora.ag/" className="hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">Instagram</a>
