@@ -15,7 +15,7 @@ export default function Projects() {
     <section id="projetos" className="relative w-full pb-24 lg:pb-36 container">
       <div className="flex lg:justify-between flex-col lg:flex-row lg:mb-10">
         <h2 className="text-white text-center lg:text-left font-semibold font-headline lg:text-7xl text-4xl leading-tight mb-6">
-          Nossos projetos <br /> falam por si.
+          LANDING PAGES
         </h2>
         <p className="text-gray-medium max-w-xs mx-auto lg:mx-0 lg:text-right text-lg mb-12">
           Cada site é feito sob medida para impactar, gerar valor e resultados reais.
