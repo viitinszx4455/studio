@@ -1,11 +1,6 @@
 'use client';
-import { useState } from 'react';
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
-import { ArrowUpRight } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { cn } from '@/lib/utils';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 const projects = [
   { id: 'repcount', name: 'RepCount', description: 'Landing page para um WebApp da marca RepCount', link: 'https://repcountt.netlify.app/', imageId: 'project-repcount' },
@@ -16,9 +11,6 @@ const projects = [
 ];
 
 export default function Projects() {
-  const [activeProject, setActiveProject] = useState(projects[1]);
-  const activeImage = PlaceHolderImages.find(img => img.id === activeProject.imageId);
-
   return (
     <section id="projetos" className="relative w-full pb-24 lg:pb-36 container">
       <div className="flex lg:justify-between flex-col lg:flex-row lg:mb-10">
@@ -30,68 +22,30 @@ export default function Projects() {
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
-        <div className="lg:hidden w-full mb-8">
-            <Carousel>
-                <CarouselContent>
-                    {projects.map((project, index) => {
-                        const image = PlaceHolderImages.find(img => img.id === project.imageId);
-                        return (
-                            <CarouselItem key={index}>
-                                {image && <Image src={image.imageUrl} alt={project.name} width={720} height={220} className="w-full h-[220px] object-cover rounded-2xl" data-ai-hint={image.imageHint} />}
-                            </CarouselItem>
-                        );
-                    })}
-                </CarouselContent>
-                <div className="mt-6 flex justify-center gap-3">
-                    <CarouselPrevious className="static translate-y-0 bg-gray-deep hover:bg-gray-medium border-gray-medium/30 text-white" />
-                    <CarouselNext className="static translate-y-0 bg-gray-deep hover:bg-gray-medium border-gray-medium/30 text-white" />
-                </div>
-            </Carousel>
-        </div>
-        
-        <div className="w-full lg:w-[40%]">
-          <div className="flex flex-col gap-8">
-            {projects.map((project) => (
-              <div
-                key={project.id}
-                className={cn(
-                  "flex items-center justify-between border-l-2 pl-3 gap-2 transition-all duration-300 cursor-pointer",
-                  activeProject.id === project.id ? 'border-gray-light text-white' : 'border-transparent text-gray-medium hover:text-white/80'
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
+        {projects.map((project) => {
+          const image = PlaceHolderImages.find(img => img.id === project.imageId);
+          return (
+            <div key={project.id} className="group flex flex-col gap-4">
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-2xl shadow-[0_0_25px_rgba(0,0,0,0.3)] transition-transform duration-300 group-hover:scale-[1.02]">
+                {image && (
+                  <Image 
+                    src={image.imageUrl} 
+                    alt={project.name} 
+                    width={720} 
+                    height={420} 
+                    className="w-full h-auto object-cover"
+                    data-ai-hint={image.imageHint}
+                  />
                 )}
-                onMouseEnter={() => setActiveProject(project)}
-              >
-                <div className="space-y-1">
-                  <h3 className="text-xl font-semibold">{project.name}</h3>
-                  <p className="opacity-70">{project.description}</p>
-                </div>
-                {activeProject.id === project.id && project.link !== '#' && (
-                  <Button asChild size="icon" className="h-10 w-10 rounded-full bg-gray-deep hover:bg-gray-medium border border-gray-medium text-white flex-shrink-0 transition-transform duration-300 hover:rotate-12">
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">
-                      <ArrowUpRight />
-                    </a>
-                  </Button>
-                )}
+              </a>
+              <div className="space-y-1 text-left">
+                <h3 className="text-xl font-semibold text-white">{project.name}</h3>
+                <p className="text-gray-medium">{project.description}</p>
               </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="relative hidden lg:w-[55%] lg:flex flex-col items-center justify-center">
-          <div className="w-full max-w-[720px] h-[420px] overflow-hidden rounded-2xl shadow-[0_0_25px_rgba(0,0,0,0.3)]">
-            {activeImage && <Image src={activeImage.imageUrl} alt={activeProject.name} width={720} height={420} className="w-full h-full object-cover rounded-2xl transition-all duration-500" data-ai-hint={activeImage.imageHint} />}
-          </div>
-          <div className="absolute -bottom-10 flex justify-center w-full gap-3">
-            {projects.map((project) => (
-              <button
-                key={project.id}
-                aria-label={`Go to project ${project.name}`}
-                onClick={() => setActiveProject(project)}
-                className={cn("w-2.5 h-2.5 rounded-full cursor-pointer transition-all duration-300", activeProject.id === project.id ? 'bg-gray-light scale-125' : 'bg-gray-500/40')}
-              />
-            ))}
-          </div>
-        </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
