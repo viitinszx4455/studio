@@ -1,7 +1,6 @@
 import Header from '@/components/layout/header';
 import Hero from '@/components/sections/hero';
 import MarqueeSection from '@/components/sections/marquee-section';
-import Services from '@/components/sections/services';
 import Projects from '@/components/sections/projects';
 import Workflow from '@/components/sections/workflow';
 import Faq from '@/components/sections/faq';
@@ -38,7 +37,6 @@ export default function Home() {
       <main className="relative z-10">
         <Hero />
         <MarqueeSection />
-        <Services />
         <Projects />
         <Workflow />
         <Faq />
