@@ -12,6 +12,7 @@ const projects = [
   { id: 'fortinvest', name: 'FortInvest', description: 'Plataforma de investimentos personalizada', link: 'https://fortinvest.netlify.app/', imageId: 'project-fortinvest' },
   { id: 'jamesjnor', name: 'JamesJnor', description: 'LinkBio personalizado com o tema Deus Grego', link: 'https://jamesjnor.netlify.app/', imageId: 'project-jamesjnor' },
   { id: 'liubarbearia', name: 'LiuBarbearia', description: 'Landing page para barbearia com agendamento online', link: 'https://liubarbeariaa.netlify.app/', imageId: 'project-liubarbearia' },
+  { id: 'cinematic', name: 'CINEMATIC', description: 'Landing page para cinemas e filmes', link: '#', imageId: 'project-cinematic' },
 ];
 
 export default function Projects() {
@@ -64,7 +65,7 @@ export default function Projects() {
                   <h3 className="text-xl font-semibold">{project.name}</h3>
                   <p className="opacity-70">{project.description}</p>
                 </div>
-                {activeProject.id === project.id && (
+                {activeProject.id === project.id && project.link !== '#' && (
                   <Button asChild size="icon" className="h-10 w-10 rounded-full bg-gray-deep hover:bg-gray-medium border border-gray-medium text-white flex-shrink-0 transition-transform duration-300 hover:rotate-12">
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
                       <ArrowUpRight />

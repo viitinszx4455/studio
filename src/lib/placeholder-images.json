@@ -39,26 +39,32 @@
     {
       "id": "project-repcount",
       "description": "RepCount project image",
-      "imageUrl": "https://images.unsplash.com/photo-1619037961390-f2047d89bc55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmaXRuZXNzJTIwYXBwfGVufDB8fHx8MTc2MjU4NTU0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/JMO0TEa.png",
       "imageHint": "fitness app"
     },
     {
       "id": "project-fortinvest",
       "description": "FortInvest project image",
-      "imageUrl": "https://images.unsplash.com/photo-1726653024714-42857c1b4906?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbnZlc3RtZW50JTIwcGxhdGZvcm18ZW58MHx8fHwxNzYyNjIzNDE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/2ibgLlj.png",
       "imageHint": "investment platform"
     },
     {
       "id": "project-jamesjnor",
       "description": "JamesJnor project image",
-      "imageUrl": "https://images.unsplash.com/photo-1639312091634-2c9d47c91b07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb25hbCUyMHBvcnRmb2xpb3xlbnwwfHx8fDE3NjI2MjM0MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/mpPmNhX.png",
       "imageHint": "personal portfolio"
     },
     {
       "id": "project-liubarbearia",
       "description": "Liu Barbearia project image",
-      "imageUrl": "https://images.unsplash.com/photo-1635611578109-4b9ce9525b13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiYXJiZXJzaG9wJTIwd2Vic2l0ZXxlbnwwfHx8fDE3NjI2MjM0MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/G8HUlCT.png",
       "imageHint": "barbershop website"
+    },
+    {
+      "id": "project-cinematic",
+      "description": "Cinematic project image",
+      "imageUrl": "https://i.imgur.com/OLt6aQn.png",
+      "imageHint": "cinema website"
     }
   ]
 }
