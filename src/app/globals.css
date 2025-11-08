@@ -5,23 +5,21 @@
 @layer base {
   :root {
     --black-true: 0 0% 0%;
-    --gray-deep: 0 0% 7%;
-    --gray-medium: 0 0% 33%;
+    --gray-deep: 0 0% 7%; /* #111111 */
+    --gray-medium: 0 0% 33%; /* #555555 */
+    --gray-light: 0 0% 80%; /* #CCCCCC */
     --white-pure: 0 0% 100%;
-    --purple-dark: 265 100% 18%;
-    --purple-main: 262 100% 50%;
-    --purple-light: 262 100% 70%;
 
     --background: var(--gray-deep);
     --foreground: var(--white-pure);
 
-    --card: 220 29% 10%;
+    --card: var(--gray-deep);
     --card-foreground: var(--white-pure);
 
     --popover: var(--gray-deep);
     --popover-foreground: var(--white-pure);
 
-    --primary: var(--purple-main);
+    --primary: var(--gray-medium);
     --primary-foreground: var(--white-pure);
 
     --secondary: 0 0% 96.1%;
@@ -30,21 +28,21 @@
     --muted: 0 0% 20%;
     --muted-foreground: 0 0% 63.9%;
     
-    --accent: var(--purple-light);
-    --accent-foreground: var(--purple-main);
+    --accent: var(--gray-medium);
+    --accent-foreground: var(--white-pure);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: var(--purple-main);
+    --border: var(--gray-medium);
+    --input: var(--gray-medium);
+    --ring: var(--gray-light);
 
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
+    --chart-1: 0 0% 70%;
+    --chart-2: 0 0% 60%;
+    --chart-3: 0 0% 50%;
+    --chart-4: 0 0% 40%;
+    --chart-5: 0 0% 30%;
     --radius: 0.75rem;
   }
  
@@ -58,7 +56,7 @@
     --popover: var(--black-true);
     --popover-foreground: var(--white-pure);
 
-    --primary: var(--purple-main);
+    --primary: var(--gray-medium);
     --primary-foreground: var(--white-pure);
 
     --secondary: 240 3.7% 15.9%;
@@ -67,21 +65,21 @@
     --muted: var(--gray-deep);
     --muted-foreground: var(--gray-medium);
 
-    --accent: var(--purple-light);
-    --accent-foreground: var(--purple-main);
+    --accent: var(--gray-medium);
+    --accent-foreground: var(--white-pure);
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
     --border: var(--gray-medium);
     --input: var(--gray-medium);
-    --ring: var(--purple-light);
+    --ring: var(--gray-light);
     
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    --chart-1: 0 0% 70%;
+    --chart-2: 0 0% 60%;
+    --chart-3: 0 0% 50%;
+    --chart-4: 0 0% 40%;
+    --chart-5: 0 0% 30%;
   }
 }
 

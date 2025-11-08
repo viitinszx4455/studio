@@ -4,7 +4,7 @@ import { Sparkles, MessageSquare, Wrench, Star } from "lucide-react"
 export default function Cta() {
     return (
         <section className="container w-full flex justify-center items-center py-16 lg:py-24">
-            <div className="relative w-full text-center rounded-2xl p-1 bg-gray-deep/45 border-b-4 border-purple-main shadow-2xl">
+            <div className="relative w-full text-center rounded-2xl p-1 bg-gray-deep/45 border-b-4 border-gray-light/30 shadow-2xl">
                 <div className="rounded-2xl py-12 lg:py-20 flex flex-col items-center justify-center gap-8">
                     <h2 className="text-white font-headline lg:text-7xl text-4xl font-semibold leading-tight">
                         Seu próximo site começa aqui
@@ -14,13 +14,13 @@ export default function Cta() {
                         Você foca no seu negócio, nós cuidamos de tudo.
                     </p>
                     <div className="text-gray-medium hidden lg:flex flex-wrap justify-center gap-x-8 gap-y-2 text-base">
-                        <p className="flex items-center gap-2"><Sparkles className="w-4 h-4 text-purple-main"/> Entrega rápida</p>
-                        <p className="flex items-center gap-2"><MessageSquare className="w-4 h-4 text-purple-main"/> Suporte direto no WhatsApp</p>
-                        <p className="flex items-center gap-2"><Wrench className="w-4 h-4 text-purple-main"/> Design 100% personalizado</p>
-                        <p className="flex items-center gap-2"><Star className="w-4 h-4 text-purple-main"/> Clientes satisfeitos em todo o Brasil</p>
+                        <p className="flex items-center gap-2"><Sparkles className="w-4 h-4 text-gray-light"/> Entrega rápida</p>
+                        <p className="flex items-center gap-2"><MessageSquare className="w-4 h-4 text-gray-light"/> Suporte direto no WhatsApp</p>
+                        <p className="flex items-center gap-2"><Wrench className="w-4 h-4 text-gray-light"/> Design 100% personalizado</p>
+                        <p className="flex items-center gap-2"><Star className="w-4 h-4 text-gray-light"/> Clientes satisfeitos em todo o Brasil</p>
                     </div>
                     <div>
-                        <Button asChild size="lg" className="w-full lg:w-auto bg-gradient-to-r from-purple-main to-purple-dark bg-[length:200%_100%] bg-right hover:bg-left transition-all duration-500 text-white font-semibold rounded-full px-8 py-6 text-base shadow-lg hover:shadow-purple-main/50">
+                        <Button asChild size="lg" className="w-full lg:w-auto bg-gray-deep hover:bg-gray-medium transition-all duration-500 text-white font-semibold rounded-full px-8 py-6 text-base shadow-lg hover:shadow-gray-light/20 border border-gray-medium">
                             <a href="https://wa.me/5562991210362?text=Olá! Quero criar meu site personalizado." target="_blank" rel="noopener noreferrer">
                                 Falar com a Nexora
                             </a>

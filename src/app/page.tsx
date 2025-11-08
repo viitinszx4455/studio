@@ -18,7 +18,7 @@ export default function Home() {
         aria-hidden="true"
         className="fixed top-0 left-0 w-full h-full z-0"
         style={{
-          background: 'radial-gradient(circle at center, hsl(var(--purple-main)) 0%, hsl(var(--purple-dark)) 60%, hsl(var(--black-true)) 100%)',
+          background: 'radial-gradient(circle at center, #1A1A1A 0%, #000000 60%, #111111 100%)',
           opacity: 0.3,
           filter: 'blur(160px)',
         }}

@@ -26,18 +26,18 @@ export default function Services() {
                 <h2 className="text-white text-center lg:text-left font-semibold font-headline lg:text-7xl text-4xl mb-4 leading-tight">
                     Serviços que elevam sua <br /> presença digital
                 </h2>
-                <div className="hidden lg:block w-[18rem] h-[2px] bg-gradient-to-r from-purple-main via-purple-main/50 to-transparent"></div>
+                <div className="hidden lg:block w-[18rem] h-[2px] bg-gradient-to-r from-gray-light via-gray-medium/50 to-transparent"></div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl mx-auto">
                 {services.map((service, index) => (
                     <Card key={index} className={
                         service.isFeatured 
-                        ? "bg-gradient-to-br from-purple-main via-purple-dark to-black border-0 shadow-[0_0_30px_rgba(90,0,255,0.3)] transition-transform duration-500 ease-out hover:scale-105"
+                        ? "bg-gradient-to-br from-gray-medium via-gray-deep to-black border border-gray-light/30 shadow-[0_0_30px_rgba(204,204,204,0.2)] transition-transform duration-500 ease-out hover:scale-105"
                         : "bg-gray-deep border border-transparent hover:border-gray-medium transition-all duration-500 shadow-lg hover:scale-105"
                     }>
                         <CardHeader>
                             <div className="flex items-center gap-4 mb-2">
-                                <div className={`w-7 h-7 rounded-full ${service.isFeatured ? 'bg-white' : 'bg-purple-main'}`}></div>
+                                <div className={`w-7 h-7 rounded-full ${service.isFeatured ? 'bg-white' : 'bg-gray-light'}`}></div>
                                 <CardTitle className="text-white text-2xl font-semibold">{service.title}</CardTitle>
                             </div>
                         </CardHeader>
@@ -48,7 +48,7 @@ export default function Services() {
                 ))}
             </div>
             <div className="flex justify-center mt-12">
-                <Button asChild size="lg" className="bg-gradient-to-r from-purple-main to-purple-dark bg-[length:200%_100%] bg-right hover:bg-left transition-all duration-500 text-white font-semibold rounded-full px-8 py-6 text-base shadow-lg hover:shadow-purple-main/50">
+                <Button asChild size="lg" className="bg-gray-deep hover:bg-gray-medium transition-all duration-500 text-white font-semibold rounded-full px-8 py-6 text-base shadow-lg hover:shadow-gray-light/20 border border-gray-medium">
                     <a href="https://wa.me/5562991210362?text=Olá, gostaria de saber mais sobre o seu serviço de criação de sites." target="_blank" rel="noopener noreferrer">Quero meu projeto personalizado</a>
                 </Button>
             </div>

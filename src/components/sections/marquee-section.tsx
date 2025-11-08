@@ -27,16 +27,16 @@ export default function MarqueeSection() {
   return (
     <div className="relative w-full h-[250px] lg:h-[300px] flex items-center justify-center overflow-hidden bg-transparent my-16 lg:my-24">
       <div className="absolute top-1/2 left-1/2 w-[200vw] lg:w-[160vw] -translate-x-1/2 -translate-y-[80%] rotate-[6deg] lg:rotate-[4deg]">
-        <div className="bg-gray-deep/70 py-4 lg:py-8 shadow-2xl backdrop-blur-sm rounded-lg w-full h-full">
+        <div className="bg-gray-deep/70 py-4 lg:py-8 shadow-2xl backdrop-blur-sm rounded-lg w-full h-full border border-gray-medium/30">
             <div className="absolute inset-0 animate-marquee-left-mobile lg:animate-marquee-left">
                 <MarqueeRow items={marqueeItems} className="text-white" />
             </div>
         </div>
       </div>
       <div className="absolute top-1/2 left-1/2 w-[200vw] lg:w-[160vw] -translate-x-1/2 -translate-y-[20%] -rotate-[6deg] lg:-rotate-[4deg]">
-        <div className="bg-gray-deep/70 py-4 lg:py-8 shadow-2xl backdrop-blur-sm rounded-lg w-full h-full">
+        <div className="bg-gray-deep/70 py-4 lg:py-8 shadow-2xl backdrop-blur-sm rounded-lg w-full h-full border border-gray-medium/30">
             <div className="absolute inset-0 animate-marquee-right-mobile lg:animate-marquee-right">
-                <MarqueeRow items={marqueeItems2} className="text-purple-light" />
+                <MarqueeRow items={marqueeItems2} className="text-gray-light" />
             </div>
         </div>
       </div>
