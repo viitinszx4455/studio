@@ -1,3 +1,64 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "logo",
+      "description": "Nexora agency logo",
+      "imageUrl": "https://images.unsplash.com/photo-1760411537843-7eee52d25fbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwdXJwbGUlMjBsZXR0ZXIlMjBOfGVufDB8fHx8MTc2MjYyMzQxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "purple letter N"
+    },
+    {
+      "id": "background-hero",
+      "description": "Abstract background hero image",
+      "imageUrl": "https://images.unsplash.com/photo-1556139918-9b92e8b00105?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHB1cnBsZSUyMHRleHR1cmV8ZW58MHx8fHwxNzYyNjIzNDE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract purple texture"
+    },
+    {
+      "id": "client-fortinvest",
+      "description": "FortInvest client logo",
+      "imageUrl": "https://images.unsplash.com/photo-1759975142096-86dbd64ad327?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjbGllbnQlMjBsb2dvfGVufDB8fHx8MTc2MjYyMzQxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "client logo"
+    },
+    {
+      "id": "client-jamesjnor",
+      "description": "JamesJnor client logo",
+      "imageUrl": "https://images.unsplash.com/photo-1761625424632-c6adc86211d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2xpZW50JTIwbG9nb3xlbnwwfHx8fDE3NjI2MjM0MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "client logo"
+    },
+    {
+      "id": "client-liubarbearia",
+      "description": "Liu Barbearia client logo",
+      "imageUrl": "https://images.unsplash.com/photo-1760636803392-85a2a18e562d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjbGllbnQlMjBsb2dvfGVufDB8fHx8MTc2MjYyMzQxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "client logo"
+    },
+    {
+      "id": "client-repcount",
+      "description": "RepCount client logo",
+      "imageUrl": "https://images.unsplash.com/photo-1759975142096-86dbd64ad327?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjbGllbnQlMjBsb2dvfGVufDB8fHx8MTc2MjYyMzQxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "client logo"
+    },
+    {
+      "id": "project-repcount",
+      "description": "RepCount project image",
+      "imageUrl": "https://images.unsplash.com/photo-1619037961390-f2047d89bc55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmaXRuZXNzJTIwYXBwfGVufDB8fHx8MTc2MjU4NTU0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fitness app"
+    },
+    {
+      "id": "project-fortinvest",
+      "description": "FortInvest project image",
+      "imageUrl": "https://images.unsplash.com/photo-1726653024714-42857c1b4906?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbnZlc3RtZW50JTIwcGxhdGZvcm18ZW58MHx8fHwxNzYyNjIzNDE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "investment platform"
+    },
+    {
+      "id": "project-jamesjnor",
+      "description": "JamesJnor project image",
+      "imageUrl": "https://images.unsplash.com/photo-1639312091634-2c9d47c91b07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb25hbCUyMHBvcnRmb2xpb3xlbnwwfHx8fDE3NjI2MjM0MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "personal portfolio"
+    },
+    {
+      "id": "project-liubarbearia",
+      "description": "Liu Barbearia project image",
+      "imageUrl": "https://images.unsplash.com/photo-1635611578109-4b9ce9525b13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiYXJiZXJzaG9wJTIwd2Vic2l0ZXxlbnwwfHx8fDE3NjI2MjM0MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "barbershop website"
+    }
+  ]
 }
