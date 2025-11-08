@@ -20,11 +20,6 @@ export default function Cta() {
                         <p className="flex items-center gap-2"><Star className="w-4 h-4 text-gray-light"/> Clientes satisfeitos em todo o Brasil</p>
                     </div>
                     <div>
-                        <Button asChild size="lg" className="w-full lg:w-auto bg-gray-deep hover:bg-gray-medium transition-all duration-500 text-white font-semibold rounded-full px-8 py-6 text-base shadow-lg hover:shadow-gray-light/20 border border-gray-medium">
-                            <a href="https://wa.me/5562991210362?text=Olá! Quero criar meu site personalizado." target="_blank" rel="noopener noreferrer">
-                                Falar com a Nexora
-                            </a>
-                        </Button>
                     </div>
                 </div>
             </div>

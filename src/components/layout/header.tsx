@@ -33,9 +33,6 @@ export default function Header() {
             <li><Link href="#quem-somos" className="text-[0.9rem] font-medium text-foreground hover:text-muted-foreground transition-colors">Quem somos</Link></li>
             <li><Link href="#contatos" className="text-[0.9rem] font-medium text-foreground hover:text-muted-foreground transition-colors">Contatos</Link></li>
           </ul>
-          <Button asChild className="bg-gray-deep hover:bg-gray-medium transition-all duration-500 text-white font-semibold rounded-full px-6 mx-[0.5rem] text-[0.8rem] h-9 shadow-md hover:shadow-lg border border-gray-medium/30">
-            <a href="https://wa.me/5562991210362?text=Olá, gostaria de saber mais sobre o seu serviço de criação de sites." target="_blank" rel="noopener noreferrer">Quero meu site</a>
-          </Button>
         </nav>
         <div className="flex items-center gap-2">
           <a href="https://www.instagram.com/nexora.ag/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-deep hover:bg-gray-medium border border-gray-medium/30 rounded-full flex items-center justify-center cursor-pointer transition-colors">

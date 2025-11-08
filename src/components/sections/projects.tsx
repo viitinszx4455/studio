@@ -74,11 +74,6 @@ export default function Projects() {
               </div>
             ))}
           </div>
-          <Button asChild size="lg" className="mt-12 w-full lg:w-auto bg-gray-deep hover:bg-gray-medium transition-all duration-500 text-white font-semibold rounded-full px-8 py-6 text-base shadow-lg hover:shadow-gray-light/20 border border-gray-medium">
-            <a href="https://wa.me/5562991210362?text=Olá, gostaria de saber mais sobre o seu serviço de criação de sites." target="_blank" rel="noopener noreferrer">
-              Quero meu projeto agora
-            </a>
-          </Button>
         </div>
 
         <div className="relative hidden lg:w-[55%] lg:flex flex-col items-center justify-center">

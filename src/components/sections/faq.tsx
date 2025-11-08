@@ -59,11 +59,6 @@ export default function Faq() {
             <p className="text-gray-medium text-center mt-16 mb-6 text-lg">
                 Ainda está com dúvidas? <br className="hidden lg:block" /> Fale com nosso suporte no WhatsApp e tenha uma resposta agora mesmo.
             </p>
-            <Button asChild size="lg" className="bg-gray-deep hover:bg-gray-medium transition-all duration-500 text-white font-semibold rounded-full px-8 py-6 text-base shadow-lg hover:shadow-gray-light/20 border border-gray-medium">
-                <a href="https://wa.me/5562991210362?text=Olá, tenho algumas dúvidas sobre o site!" target="_blank" rel="noopener noreferrer">
-                    Falar com o suporte
-                </a>
-            </Button>
         </section>
     )
 }
