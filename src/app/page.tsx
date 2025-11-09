@@ -6,6 +6,7 @@ import Workflow from '@/components/sections/workflow';
 import Faq from '@/components/sections/faq';
 import Cta from '@/components/sections/cta';
 import Footer from '@/components/layout/footer';
+import VideoCreatives from '@/components/sections/video-creatives';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
                 CRIATIVOS ESCALADOS
             </h2>
         </section>
+        <VideoCreatives />
         <Workflow />
         <Faq />
         <Cta />
