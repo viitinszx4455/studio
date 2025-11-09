@@ -2,10 +2,10 @@
 import { useRef, useEffect } from 'react';
 
 const videos = [
-  '/video1.mp4',
-  '/video2.mp4',
-  '/video3.mp4',
-  '/video4.mp4',
+  '/video_1.mp4',
+  '/video_2.mp4',
+  '/video_3.mp4',
+  '/video_4.mp4',
 ];
 
 const VideoCard = ({ src }: { src: string }) => {
