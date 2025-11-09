@@ -16,13 +16,13 @@ export default function Home() {
       <main className="relative z-10">
         <Hero />
         <MarqueeSection />
-        <Projects />
         <section className="container relative flex flex-col items-center justify-center pt-16 lg:pt-24">
             <h2 className="lg:text-7xl text-4xl text-center font-semibold font-headline text-white uppercase">
                 CRIATIVOS ESCALADOS
             </h2>
         </section>
         <VideoCreatives />
+        <Projects />
         <section id="entregaveis" className="w-full py-16 sm:py-20 md:py-24 flex flex-col items-center justify-center">
           <h2 className="text-center text-white font-bold uppercase tracking-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight drop-shadow-sm mb-12">
             ENTREGÁVEIS EM ÁREA DE MEMBROS
