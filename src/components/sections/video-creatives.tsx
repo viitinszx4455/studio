@@ -16,7 +16,9 @@ const VideoCard = ({ src }: { src: string }) => {
       (entries) => {
         const entry = entries[0];
         if (entry.isIntersecting) {
-          videoRef.current?.play();
+          videoRef.current?.play().catch(error => {
+            console.error("Video play failed:", error);
+          });
         } else {
           videoRef.current?.pause();
         }
@@ -40,15 +42,16 @@ const VideoCard = ({ src }: { src: string }) => {
     <div className="bg-gray-deep/50 rounded-2xl border border-gray-medium/30 shadow-lg overflow-hidden aspect-[9/16] transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-gray-light/20">
       <video
         ref={videoRef}
-        src={src}
         autoPlay
         loop
         muted
         playsInline
         preload="metadata"
-        loading="lazy"
         className="w-full h-full object-cover"
-      />
+      >
+        <source src={src} type="video/mp4" />
+        Seu navegador não suporta vídeos HTML5.
+      </video>
     </div>
   );
 };
