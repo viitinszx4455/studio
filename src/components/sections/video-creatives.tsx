@@ -37,7 +37,7 @@ const VideoCard = ({ src }: { src: string }) => {
   }, []);
 
   return (
-    <div className="bg-gray-deep/50 rounded-2xl border border-gray-medium/30 shadow-lg overflow-hidden aspect-[9/16]">
+    <div className="bg-gray-deep/50 rounded-2xl border border-gray-medium/30 shadow-lg overflow-hidden aspect-[9/16] transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-gray-light/20">
       <video
         ref={videoRef}
         src={src}
