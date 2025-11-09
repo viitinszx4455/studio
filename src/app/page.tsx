@@ -17,11 +17,16 @@ export default function Home() {
         <MarqueeSection />
         <Projects />
         <section className="container relative flex flex-col items-center justify-center pt-16 lg:pt-24">
-            <h2 className="lg:text-7xl text-4xl text-center font-semibold font-headline text-white">
+            <h2 className="lg:text-7xl text-4xl text-center font-semibold font-headline text-white uppercase">
                 CRIATIVOS ESCALADOS
             </h2>
         </section>
         <VideoCreatives />
+        <section id="entregaveis" className="container relative flex flex-col items-center justify-center pt-16 lg:pt-24">
+          <h2 className="text-center text-white font-bold uppercase tracking-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight drop-shadow-sm font-headline">
+            ENTREGÁVEIS EM ÁREA DE MEMBROS
+          </h2>
+        </section>
         <Workflow />
         <Faq />
         <Cta />
