@@ -40,9 +40,9 @@ export default function Header() {
           <div className="w-10 h-10 bg-gray-deep hover:bg-gray-medium border border-gray-medium/30 rounded-full flex items-center justify-center cursor-pointer transition-colors">
             <Facebook className="w-5 h-5 text-white" />
           </div>
-          <a href="https://wa.me/5562991210362?text=Olá, gostaria de saber mais sobre o seu serviço de criação de sites." target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-deep hover:bg-gray-medium border border-gray-medium/30 rounded-full flex items-center justify-center cursor-pointer transition-colors">
+          <div className="w-10 h-10 bg-gray-deep hover:bg-gray-medium border border-gray-medium/30 rounded-full flex items-center justify-center cursor-pointer transition-colors">
             <MessageCircle className="w-5 h-5 text-white" />
-          </a>
+          </div>
         </div>
       </div>
     </header>
