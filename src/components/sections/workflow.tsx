@@ -30,7 +30,7 @@ export default function Workflow() {
     return (
         <section id="contatos" className="container relative flex flex-col items-center justify-center py-16 lg:py-24 mb-16 lg:mb-24 overflow-hidden">
             <h2 className="lg:text-7xl text-4xl text-center font-semibold font-headline text-white pb-8 lg:pb-16">
-                Fluxo de trabalho da <span className="text-gray-light">Nexora</span>
+                Fluxo de trabalho da <span className="text-gray-light">Scale</span>
             </h2>
             <div className="flex gap-3 justify-center items-center mb-4">
                 <p className="text-base text-muted-foreground font-semibold">Arraste para o lado</p>
