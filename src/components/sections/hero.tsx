@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { CircleCheckBig, ArrowUpRight } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import ScaleLogo from '@/components/logo/scale-logo';
 
 const clientLogoIds = [
   'client-fortinvest',
@@ -16,6 +17,7 @@ export default function Hero() {
   return (
     <section id="home" className="container pt-24 lg:pt-32 pb-12 lg:pb-24">
       <div className="flex flex-col items-center justify-center lg:mt-12">
+        <ScaleLogo />
         <div className="flex flex-col items-center text-center">
           <h1 className="text-6xl lg:text-9xl font-bold text-white font-headline tracking-[-0.02em] leading-[1.1]">
             CREATIVES
