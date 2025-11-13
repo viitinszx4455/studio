@@ -34,15 +34,7 @@ export default function Header() {
           </ul>
         </nav>
         <div className="flex items-center gap-2">
-          <a href="https://www.instagram.com/nexora.ag/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-deep hover:bg-gray-medium border border-gray-medium/30 rounded-full flex items-center justify-center cursor-pointer transition-colors">
-            <Instagram className="w-5 h-5 text-white" />
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=61581107199846" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-deep hover:bg-gray-medium border border-gray-medium/30 rounded-full flex items-center justify-center cursor-pointer transition-colors">
-            <Facebook className="w-5 h-5 text-white" />
-          </a>
-          <a href="https://wa.me/5562991210362?text=Olá, gostaria de saber mais sobre o seu serviço de criação de sites." target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-deep hover:bg-gray-medium border border-gray-medium/30 rounded-full flex items-center justify-center cursor-pointer transition-colors">
-            <MessageCircle className="w-5 h-5 text-white" />
-          </a>
+          
         </div>
       </div>
     </header>
