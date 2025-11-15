@@ -12,28 +12,41 @@ const VideoCard = ({ src }: { src: string }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
+    const videoElement = videoRef.current;
+
     const observer = new IntersectionObserver(
       (entries) => {
-        const entry = entries[0];
-        if (entry.isIntersecting) {
-          videoRef.current?.play().catch(error => {
-            console.error("Video play failed:", error);
-          });
-        } else {
-          videoRef.current?.pause();
-        }
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Load and play the video when it's close to the viewport
+            if (videoElement) {
+              videoElement.load();
+              videoElement.play().catch(error => {
+                console.error("Video play failed:", error);
+              });
+            }
+          } else {
+            // Pause and reset the video when it's scrolled away
+            if (videoElement) {
+              videoElement.pause();
+              videoElement.currentTime = 0;
+            }
+          }
+        });
       },
-      { threshold: 0.5 }
+      { 
+        // Start loading when the video is 200px away from the viewport
+        rootMargin: '200px' 
+      }
     );
 
-    const currentVideoRef = videoRef.current;
-    if (currentVideoRef) {
-      observer.observe(currentVideoRef);
+    if (videoElement) {
+      observer.observe(videoElement);
     }
 
     return () => {
-      if (currentVideoRef) {
-        observer.unobserve(currentVideoRef);
+      if (videoElement) {
+        observer.unobserve(videoElement);
       }
     };
   }, []);
@@ -42,13 +55,14 @@ const VideoCard = ({ src }: { src: string }) => {
     <div className="bg-gray-deep/50 rounded-2xl border border-gray-medium/30 shadow-lg overflow-hidden aspect-[9/16] transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-gray-light/20">
       <video
         ref={videoRef}
-        autoPlay
         loop
         muted
         playsInline
         preload="metadata"
         className="w-full h-full object-cover"
+        disablePictureInPicture
       >
+        <source src={src.replace('.mp4', '.webm')} type="video/webm" />
         <source src={src} type="video/mp4" />
         Seu navegador não suporta vídeos HTML5.
       </video>
