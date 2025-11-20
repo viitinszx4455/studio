@@ -18,7 +18,6 @@ const VideoCard = ({ src }: { src: string }) => {
       (entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            // Load and play the video when it's close to the viewport
             if (videoElement) {
               videoElement.load();
               videoElement.play().catch(error => {
@@ -26,7 +25,6 @@ const VideoCard = ({ src }: { src: string }) => {
               });
             }
           } else {
-            // Pause and reset the video when it's scrolled away
             if (videoElement) {
               videoElement.pause();
               videoElement.currentTime = 0;
@@ -35,7 +33,6 @@ const VideoCard = ({ src }: { src: string }) => {
         });
       },
       { 
-        // Start loading when the video is 200px away from the viewport
         rootMargin: '200px' 
       }
     );
