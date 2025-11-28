@@ -20,7 +20,7 @@ export default function Hero() {
         <ScaleLogo />
         <div className="flex flex-col items-center text-center">
           <h1 className="text-6xl lg:text-9xl font-bold text-white font-headline tracking-[-0.02em] leading-[1.1]">
-            CREATIVES
+            AMPLY
           </h1>
           <h1 
             className="text-6xl lg:text-9xl font-bold font-headline italic tracking-[-0.02em] leading-[1.1]" 
