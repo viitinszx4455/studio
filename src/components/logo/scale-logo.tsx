@@ -60,42 +60,28 @@ export default function ScaleLogo() {
             <stop offset="0%" stopColor="#FFFFFF" stopOpacity="1" />
             <stop offset="100%" stopColor="#CCCCCC" stopOpacity="0.9" />
           </linearGradient>
-           <linearGradient id="metallic-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#E8E8E8" />
-            <stop offset="50%" stopColor="#909090" />
-            <stop offset="100%" stopColor="#404040" />
-          </linearGradient>
         </defs>
 
-        {/* Amply 'e' Logo Geometry */}
+        {/* Triangle Geometry */}
         <g>
-          {/* Main body with metallic gradient */}
-          <path d="M120,55 L120,85 L80,105 L40,85 L40,55 L80,35 L120,55 Z" fill="url(#metallic-gradient)" />
-
-          {/* White outlines */}
-          <path d="M120,55 L120,85 L80,105 L40,85 L40,55 L80,35 L120,55 Z" fill="none" stroke="url(#edge-gradient)" strokeWidth="3" />
-          
-          {/* Inner highlight lines */}
-          <path d="M115,58 L115,82 L80,99 L45,82 L45,58 L80,41 L115,58 Z" fill="none" stroke="#E8E8E8" strokeWidth="1.5" opacity="0.7" />
-
-          {/* Central dividing line */}
-          <path d="M80,35 L80,105" stroke="#E8E8E8" strokeWidth="1.5" opacity="0.7" />
+          <polygon points="80,20 150,120 10,120" fill="none" stroke="url(#edge-gradient)" strokeWidth="3" strokeLinejoin="miter" strokeLinecap="square" />
+          <polygon points="80,32 138,108 22,108" fill="none" stroke="#E8E8E8" strokeWidth="2" opacity="0.95" />
         </g>
 
-        {/* Light Point & Halos - Repositioned to the top of the 'e' */}
+        {/* Light Point & Halos */}
         <g className="light-point">
-          <circle cx="80" cy="35" r="15" fill="url(#light-gradient)" opacity="0.6" />
-          <circle cx="80" cy="35" r="25" fill="url(#light-gradient)" opacity="0.3" />
-          <circle cx="80" cy="35" r="35" fill="url(#light-gradient)" opacity="0.15" />
-          <circle cx="80" cy="35" r="6" fill="#FFFFFF" filter="url(#glow-effect)" />
+          <circle cx="80" cy="20" r="15" fill="url(#light-gradient)" opacity="0.6" />
+          <circle cx="80" cy="20" r="25" fill="url(#light-gradient)" opacity="0.3" />
+          <circle cx="80" cy="20" r="35" fill="url(#light-gradient)" opacity="0.15" />
+          <circle cx="80" cy="20" r="6" fill="#FFFFFF" filter="url(#glow-effect)" />
         </g>
 
-        {/* Spheres - Repositioned around the 'e' logo */}
-        <circle className="sphere sphere-1" cx="30" cy="45" r="4" fill="#FFFFFF" opacity="0.85" />
-        <circle className="sphere sphere-2" cx="25" cy="70" r="3" fill="#E8E8E8" opacity="0.70" />
-        <circle className="sphere sphere-3" cx="130" cy="50" r="2.5" fill="#D3D3D3" opacity="0.75" />
-        <circle className="sphere sphere-4" cx="35" cy="95" r="2" fill="#F5F5F5" opacity="0.60" />
-        <circle className="sphere sphere-5" cx="125" cy="80" r="1.5" fill="#FAFAFA" opacity="0.50" />
+        {/* Spheres */}
+        <circle className="sphere sphere-1" cx="60" cy="35" r="4" fill="#FFFFFF" opacity="0.85" />
+        <circle className="sphere sphere-2" cx="52" cy="60" r="3" fill="#E8E8E8" opacity="0.70" />
+        <circle className="sphere sphere-3" cx="58" cy="50" r="2.5" fill="#D3D3D3" opacity="0.75" />
+        <circle className="sphere sphere-4" cx="48" cy="95" r="2" fill="#F5F5F5" opacity="0.60" />
+        <circle className="sphere sphere-5" cx="55" cy="80" r="1.5" fill="#FAFAFA" opacity="0.50" />
       </svg>
     </div>
   );
