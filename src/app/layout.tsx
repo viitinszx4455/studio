@@ -3,8 +3,19 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Nexora',
+  title: 'CREATIVESCALE',
   description: 'Sites profissionais feitos para destacar seu negócio e gerar resultados reais',
+  icons: {
+    icon: [
+      { url: 'https://i.imgur.com/cMvRDHU.png' },
+      { url: 'https://i.imgur.com/cMvRDHU.png', sizes: '16x16', type: 'image/png' },
+      { url: 'https://i.imgur.com/cMvRDHU.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: 'https://i.imgur.com/cMvRDHU.png' },
+    ],
+    shortcut: 'https://i.imgur.com/cMvRDHU.png',
+  },
 };
 
 export default function RootLayout({
